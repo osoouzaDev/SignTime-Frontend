@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Jornadas por Setor</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+<main class="page">
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+
+    <header class="page-header">
+
+        <div class="page-title">
+
+            <span class="eyebrow">
+                GESTÃO DE JORNADAS
+            </span>
+
+            <h1>Jornadas</h1>
+
+            <p>
+                Configure, organize e acompanhe as jornadas
+                dos colaboradores por setor.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         NAVEGAÇÃO
+    =========================================== -->
+
+    <nav class="journey-tabs">
+
+        <button class="tab active">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"
+                />
+            </svg>
+
+            Jornadas por Setor
+
+        </button>
+
+
+        <button class="tab">
+
+            <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path
+                    d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                />
+            </svg>
+
+            Banco de Tarefas
+
+        </button>
+
+    </nav>
+
+
+    <!-- ==========================================
+         INDICADORES
+    =========================================== -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <div class="stat-icon blue">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M3 21h18M6 21V7l6-4 6 4v14M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1"
+                    />
+                </svg>
+            </div>
+
+            <div>
+                <span>Setores</span>
+                <strong>9</strong>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon green">
+
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M20 6L9 17l-5-5"
+                    />
+                </svg>
+
+            </div>
+
+            <div>
+                <span>Com jornada</span>
+                <strong>0</strong>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon orange">
+
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7v6M12 17h.01"/>
+                </svg>
+
+            </div>
+
+            <div>
+                <span>Sem jornada</span>
+                <strong>9</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         SETORES
+    =========================================== -->
+
+    <section class="sectors">
+
+        <div class="section-header">
+
+            <div class="section-title">
+
+                <div class="section-title-row">
+
+                    <div class="section-icon">
+
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M3 21h18M6 21V7l6-4 6 4v14M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1"
+                            />
+                        </svg>
+
+                    </div>
+
+                    <h2>
+                        Selecione um setor
+                    </h2>
+
+                </div>
+
+                <p>
+                    Escolha o setor para visualizar ou configurar
+                    suas etapas de jornada.
+                </p>
+
+            </div>
+
+
+            <!-- BUSCA -->
+
+            <div class="search">
+
+                <svg viewBox="0 0 24 24">
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                    />
+
+                    <path
+                        d="M20 20l-4-4"
+                    />
+                </svg>
+
+                <input
+                    type="text"
+                    placeholder="Buscar setor..."
+                >
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================================
+             GRID DOS SETORES
+        =========================================== -->
+
+        <div class="sector-grid">
+
+
+            <!-- ATENDIMENTO -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon blue">
+                        🎧
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        Atendimento
+                    </h3>
+
+                    <p>
+                        Jornada de atendimento e relacionamento.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- CEO -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon purple">
+                        👔
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        CEO
+                    </h3>
+
+                    <p>
+                        Jornada destinada à gestão executiva.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- COMERCIAL -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon cyan">
+                        📈
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        Comercial
+                    </h3>
+
+                    <p>
+                        Processos comerciais e relacionamento com clientes.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- FINANCEIRO -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon green">
+                        💰
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        Financeiro
+                    </h3>
+
+                    <p>
+                        Rotinas e processos do setor financeiro.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- FISCAL -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon orange">
+                        📄
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        Fiscal
+                    </h3>
+
+                    <p>
+                        Processos fiscais e obrigações tributárias.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- PESSOAL -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon pink">
+                        👤
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        Pessoal
+                    </h3>
+
+                    <p>
+                        Processos relacionados à gestão de pessoas.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- SOCIETÁRIO -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon yellow">
+                        🏛️
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        Societário
+                    </h3>
+
+                    <p>
+                        Rotinas societárias e processos empresariais.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- SUCESSO DO CLIENTE -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon amber">
+                        🤝
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        Sucesso do Cliente
+                    </h3>
+
+                    <p>
+                        Experiência, relacionamento e sucesso dos clientes.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- TECNOLOGIA -->
+
+            <button class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon violet">
+                        🛠️
+                    </div>
+
+                    <div class="arrow">
+                        →
+                    </div>
+
+                </div>
+
+                <div class="sector-content">
+
+                    <h3>
+                        Tecnologia
+                    </h3>
+
+                    <p>
+                        Desenvolvimento, infraestrutura e suporte.
+                    </p>
+
+                </div>
+
+                <div class="sector-footer">
+
+                    <span class="status empty">
+                        <span class="status-dot"></span>
+                        Sem jornada
+                    </span>
+
+                    <span class="configure">
+                        Configurar
+                    </span>
+
+                </div>
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
